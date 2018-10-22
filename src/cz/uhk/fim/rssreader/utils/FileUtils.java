@@ -14,12 +14,6 @@ public class FileUtils {
     public static void saveStringToFile(String filepath, byte[] data) throws IOException {
         Path path = Paths.get(filepath);
         Files.write(path, data);
-        //TODO
-        // pridat listenery na tlacitka load a save
-        // napsat metodu validateInput() (return bool)
-        // pridat JLabel lblError - oznami co uzivatel po****
-        // pod nebo nad panelem, červeně
-        // zavolat catch jako konstantu - load,save,validate
     }
 
 }
