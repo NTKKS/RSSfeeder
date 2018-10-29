@@ -1,19 +1,11 @@
 package cz.uhk.fim.rssreader.gui;
 
-import cz.uhk.fim.rssreader.model.RSSItem;
-import cz.uhk.fim.rssreader.model.RSSList;
 import cz.uhk.fim.rssreader.utils.FileUtils;
-import cz.uhk.fim.rssreader.utils.RSSParser;
-import org.xml.sax.SAXException;
 
 import javax.swing.*;
-import javax.xml.parsers.ParserConfigurationException;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class MainFrame extends JFrame {
 
@@ -22,10 +14,9 @@ public class MainFrame extends JFrame {
     private static final String IO_SAVE_TYPE = "IO_SAVE_TYPE";
 
 
-    private JLabel lblError = new JLabel(VALIDATION_TYPE, JLabel.CENTER);
-    JTextArea txtContent = new JTextArea();
-
-    private RSSList rssList;
+    private JLabel lblErrorMessage;
+    private JTextArea txtContent = new JTextArea();
+    private JTextField txtInputField;
 
 
     public MainFrame() {
@@ -47,70 +38,19 @@ public class MainFrame extends JFrame {
 
         //horní itemy
         JButton btnLoad = new JButton("Load");
-        JTextField txtInputField = new JTextField();
+        txtInputField = new JTextField();
         JButton btnSave = new JButton("Save");
 
-        lblError.setBackground(Color.RED);
-        lblError.setOpaque(true);
-        lblError.setVisible(false);
+        lblErrorMessage = new JLabel();
+        lblErrorMessage.setBackground(Color.RED);
+        lblErrorMessage.setOpaque(true);
+        lblErrorMessage.setHorizontalAlignment(SwingConstants.CENTER);
 
         //Pridani hornich itemů
         controlPanel.add(btnLoad, BorderLayout.WEST);
         controlPanel.add(txtInputField, BorderLayout.CENTER);
         controlPanel.add(btnSave, BorderLayout.EAST);
-        controlPanel.add(lblError,BorderLayout.NORTH);
-
-        //listener tlacitka Load
-        btnLoad.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (validateInput()) {
-                    lblError.setVisible(true);
-                } else {
-                    lblError.setVisible(false);
-                }
-            }
-        });
-
-        btnLoad.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (validateInput()) {
-                    //TODO
-
-                }
-            }
-        });
-
-        btnSave.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (validateInput()) {
-                    //TODO
-                    try {
-                        rssList = new RSSParser().getParsedRSS(txtInputField.getText());
-                        for (RSSItem item : rssList.getAllItems()) {
-                            txtContent.append(String.format("%s - autor: %s%n", item.getTitle(), item.getAuthor()));
-                        }
-                    } catch (IOException e1) {
-                        e1.printStackTrace();
-                    } catch (SAXException e1) {
-                        e1.printStackTrace();
-                    } catch (ParserConfigurationException e1) {
-                        e1.printStackTrace();
-                    }
-
-                }
-            }
-        });
-
-        //listener tlacitka Save
-        btnSave.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                System.out.println("Save clicked");
-            }
-        });
+        controlPanel.add(lblErrorMessage, BorderLayout.NORTH);
 
         //horni kontrolní panel
         add(controlPanel, BorderLayout.NORTH);
@@ -120,15 +60,37 @@ public class MainFrame extends JFrame {
         textPanel.add(txtContent, BorderLayout.CENTER);
         add(new JScrollPane(textPanel), BorderLayout.CENTER);
 
-        try {
-            txtContent.setText(FileUtils.loadStringFromFile("rss.xml"));
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+        btnLoad.addActionListener(e -> {
+            if (validateInput()) {
+                try {
+                    txtContent.setText(FileUtils.loadStringFromFile(txtInputField.getText()));
+                } catch (IOException e1) {
+                    showErrorMessage(IO_LOAD_TYPE);
+                    e1.printStackTrace();
+                }
+            }
+        });
+
+
+        btnSave.addActionListener(e -> {
+            if (validateInput()) {
+                try {
+                    FileUtils.saveStringToFile(txtInputField.getText(), txtContent.getText().getBytes(StandardCharsets.UTF_8));
+                } catch (IOException e1) {
+                    showErrorMessage(IO_SAVE_TYPE);
+                    e1.printStackTrace();
+                }
+            }
+        });
     }
 
     private boolean validateInput() {
-        return !lblError.getText().trim().isEmpty();
+        lblErrorMessage.setVisible(false);
+        if (txtInputField.getText().trim().isEmpty()) {
+            showErrorMessage(VALIDATION_TYPE);
+            return false;
+        }
+        return true;
     }
 
     private void showErrorMessage(String type) {
@@ -144,8 +106,10 @@ public class MainFrame extends JFrame {
                 message = "Chyba při ukládání souboru.";
                 break;
             default:
-                message = "Chyba.";
-
+                message = "Bůh ví, co se stalo.";
+                break;
         }
+        lblErrorMessage.setText(message);
+        lblErrorMessage.setVisible(true);
     }
 }
