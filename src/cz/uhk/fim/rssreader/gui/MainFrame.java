@@ -1,11 +1,21 @@
 package cz.uhk.fim.rssreader.gui;
 
-import cz.uhk.fim.rssreader.utils.FileUtils;
+import cz.uhk.fim.rssreader.model.RSSItem;
+import cz.uhk.fim.rssreader.model.RSSList;
+import cz.uhk.fim.rssreader.utils.RSSParser;
+import org.xml.sax.SAXException;
 
 import javax.swing.*;
+import javax.xml.parsers.ParserConfigurationException;
 import java.awt.*;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
+
+/*
+TODO
+nastavit kazdemu itemu jinou barvu (RANDOM)
+po vypnutí a zapnutí stejná (nastavit podle něčeho v textu)
+barvy v třídě Color, a String
+ */
 
 public class MainFrame extends JFrame {
 
@@ -17,6 +27,7 @@ public class MainFrame extends JFrame {
     private JLabel lblErrorMessage;
     private JTextArea txtContent = new JTextArea();
     private JTextField txtInputField;
+    private RSSList rssList;
 
 
     public MainFrame() {
@@ -55,11 +66,30 @@ public class MainFrame extends JFrame {
         //horni kontrolní panel
         add(controlPanel, BorderLayout.NORTH);
 
+        JPanel contentPanel = new JPanel(new WrapLayout());
+
+        try {
+            rssList = new RSSParser().getParsedRSS("rss.xml");
+            for (RSSItem item : rssList.getAllItems()) {
+                contentPanel.add(new CardView(item));
+            }
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        }
+        add(new JScrollPane(contentPanel), BorderLayout.CENTER);
+
+        /*
         //dolni text panel
         JPanel textPanel = new JPanel(new BorderLayout());
         textPanel.add(txtContent, BorderLayout.CENTER);
         add(new JScrollPane(textPanel), BorderLayout.CENTER);
+        */
 
+        /*
         btnLoad.addActionListener(e -> {
             if (validateInput()) {
                 try {
@@ -81,8 +111,9 @@ public class MainFrame extends JFrame {
                     e1.printStackTrace();
                 }
             }
-        });
+        });*/
     }
+
 
     private boolean validateInput() {
         lblErrorMessage.setVisible(false);
