@@ -21,6 +21,7 @@ public class CardView extends JPanel {
         setBackground(Color.RED);
         setDescription(item.getDescription());
         setInfo(String.format("%s - %s", item.getPubDate(), item.getAuthor()));
+        genColor(item);
     }
 
     private void  setTitle(String title){
@@ -46,5 +47,15 @@ public class CardView extends JPanel {
         lblInfo.setForeground(Color.LIGHT_GRAY);
         lblInfo.setText(String.format("%s%s%s", startHtml, info, endHtml));
         add(lblInfo);
+    }
+
+    private void genColor(RSSItem item){
+        String text = item.getDescription().replaceAll("[^\\p{L}\\p{Z}]","").replaceAll("\\s","");
+        System.out.println(text);
+        char txt = text.charAt(0);
+        System.out.println(txt);
+        int cislo = txt;
+        System.out.println(cislo);
+        Color color = new Color(0xffffff);
     }
 }
