@@ -17,18 +17,17 @@ public class CardView extends JPanel {
     public CardView(RSSItem item){
         setLayout(new WrapLayout());
         setSize(ITEM_WIDTH,HEIGHT);
+        setBackground(genColor(item));
         setTitle(item.getTitle());
-        setBackground(Color.RED);
         setDescription(item.getDescription());
         setInfo(String.format("%s - %s", item.getPubDate(), item.getAuthor()));
-        genColor(item);
     }
 
     private void  setTitle(String title){
         JLabel lblTitle = new JLabel();
         lblTitle.setSize(COMPONENT_WIDTH,HEIGHT);
         lblTitle.setFont(new Font("Courier", Font.BOLD, 12));
-        lblTitle.setText(String.format("%s%s%s", startHtml, title, endHtml));
+        lblTitle.setText(String.format("%s%s%s", startHtml, title.subSequence(0,Math.min(50,title.length()))+"...", endHtml));
         add(lblTitle);
     }
 
@@ -36,7 +35,7 @@ public class CardView extends JPanel {
         JLabel lblDescr = new JLabel();
         lblDescr.setSize(COMPONENT_WIDTH,HEIGHT);
         lblDescr.setFont(new Font("Courier", Font.PLAIN, 11));
-        lblDescr.setText(String.format("%s%s%s", startHtml, description, endHtml));
+        lblDescr.setText(String.format("%s%s%s", startHtml, description.subSequence(0,Math.min(250,description.length()))+" ...", endHtml));
         add(lblDescr);
     }
 
@@ -49,13 +48,9 @@ public class CardView extends JPanel {
         add(lblInfo);
     }
 
-    private void genColor(RSSItem item){
-        String text = item.getDescription().replaceAll("[^\\p{L}\\p{Z}]","").replaceAll("\\s","");
-        System.out.println(text);
-        char txt = text.charAt(0);
-        System.out.println(txt);
-        int cislo = txt;
-        System.out.println(cislo);
-        Color color = new Color(0xffffff);
+    private Color genColor(RSSItem item){
+        String text = item.getDescription();
+        Color color = Color.decode(String.valueOf(text.hashCode()));
+        return color;
     }
 }
