@@ -4,6 +4,8 @@ import cz.uhk.fim.rssreader.model.RSSItem;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class CardView extends JPanel {
 
@@ -23,6 +25,14 @@ public class CardView extends JPanel {
         setTitle(item.getTitle());
         setDescription(item.getDescription());
         setInfo(String.format("%s%s", item.getPubDate(), item.getAuthor()));
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount()==2){
+                    new DetailFrame(item).setVisible(true);
+                }
+            }
+        });
     }
 
     private void  setTitle(String title){
