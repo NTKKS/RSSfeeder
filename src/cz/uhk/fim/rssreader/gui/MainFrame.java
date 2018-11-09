@@ -28,6 +28,7 @@ public class MainFrame extends JFrame {
     private JTextArea txtContent = new JTextArea();
     private JTextField txtInputField;
     private RSSList rssList;
+    private JScrollPane myScrollPane;
 
 
     public MainFrame() {
@@ -80,7 +81,8 @@ public class MainFrame extends JFrame {
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         }
-        add(new JScrollPane(contentPanel), BorderLayout.CENTER);
+        add(myScrollPane = new JScrollPane(contentPanel), BorderLayout.CENTER);
+        myScrollPane.getVerticalScrollBar().setUnitIncrement(10);
 
         /*
         //dolni text panel

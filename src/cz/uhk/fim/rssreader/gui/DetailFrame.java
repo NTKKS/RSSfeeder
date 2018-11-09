@@ -3,21 +3,34 @@ package cz.uhk.fim.rssreader.gui;
 import cz.uhk.fim.rssreader.model.RSSItem;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class DetailFrame extends JFrame {
 
-    private RSSItem item;
+    public static final int DETAIL_WIDTH = 600;
+    public static final int DETAIL_HEIGHT = 400;
+    public static final int CONTENT_WIDTH = (DETAIL_WIDTH/2);
+    final String startHtml = "<html><p style='width: " + CONTENT_WIDTH +" px;text-align:center;margin-top:10px'>";
+    final String startHtmlDesc = "<html><p style='width: " + CONTENT_WIDTH +" px;text-align:justify;padding:30px 0 80px 0'>";
+    final String endHtml = "</p></html>";
 
-    public DetailFrame(RSSItem item){
+    private RSSItem item;
+    private Color detailColor;
+    private Color textColor;
+
+    public DetailFrame(RSSItem item, Color detailColor, Color textColor){
+        dispose();
         this.item = item;
+        this.detailColor = detailColor;
+        this.textColor = textColor;
         init();
     }
 
     private void init(){
         setUndecorated(true);
-        setSize(600, 400);
+        setSize(DETAIL_WIDTH, DETAIL_HEIGHT);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -34,15 +47,35 @@ public class DetailFrame extends JFrame {
     }
     private void initContentUI(){
         JPanel content = new JPanel();
+        content.setBackground(textColor == Color.BLACK ? detailColor.brighter() : detailColor.darker());
         add(content);
+
         JLabel lblTitle = new JLabel(item.getTitle());
+        lblTitle.setText(String.format("%s%s%s", startHtml, lblTitle.getText(), endHtml));
+        lblTitle.setFont(new Font("Arial",Font.BOLD,20));
+        lblTitle.setForeground(textColor);
         content.add(lblTitle);
+
         JLabel lblDescription = new JLabel(item.getDescription());
-        lblDescription.setHorizontalAlignment(SwingConstants.LEFT);
+        lblDescription.setText(String.format("%s%s%s", startHtmlDesc,lblDescription.getText(),endHtml));
+        lblDescription.setFont(new Font("Arial",Font.PLAIN,12));
+        lblDescription.setForeground(textColor);
         content.add(lblDescription);
+
         JLabel lblLink = new JLabel(item.getLink());
+        lblLink.setText(String.format("%s%s%s", startHtml,lblLink.getText(),endHtml));
+        lblLink.setFont(new Font("Arial",Font.ITALIC,10));
+        lblLink.setForeground(textColor);//getGray(textColor));
         content.add(lblLink);
+
         JLabel lblDateAuthor = new JLabel(item.getPubDate()+" "+item.getAuthor());
+        lblDateAuthor.setText(String.format("%s%s%s", startHtml,lblDateAuthor.getText(),endHtml));
+        lblDateAuthor.setFont(new Font("Arial",Font.ITALIC,10));
+        lblDateAuthor.setForeground(getGray(textColor));
         content.add(lblDateAuthor);
+    }
+
+    public Color getGray(Color textColor){
+        return textColor == Color.WHITE ? Color.LIGHT_GRAY : Color.DARK_GRAY;
     }
 }
