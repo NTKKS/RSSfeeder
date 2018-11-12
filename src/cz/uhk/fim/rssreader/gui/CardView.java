@@ -76,7 +76,6 @@ public class CardView extends JPanel {
 
     private Color inverseColor(Color bgColor) {
         double r, g, b, l;
-        l = 0;
         r = bgColor.getRed();
         g = bgColor.getGreen();
         b = bgColor.getBlue();

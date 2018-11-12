@@ -2,20 +2,19 @@ package cz.uhk.fim.rssreader.gui;
 
 import cz.uhk.fim.rssreader.model.RSSItem;
 import cz.uhk.fim.rssreader.model.RSSList;
+import cz.uhk.fim.rssreader.model.RSSSource;
+import cz.uhk.fim.rssreader.utils.FileUtils;
 import cz.uhk.fim.rssreader.utils.RSSParser;
 import org.xml.sax.SAXException;
 
 import javax.swing.*;
 import javax.xml.parsers.ParserConfigurationException;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
-
-/*
-TODO
-nastavit kazdemu itemu jinou barvu (RANDOM)
-po vypnutí a zapnutí stejná (nastavit podle něčeho v textu)
-barvy v třídě Color, a String
- */
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainFrame extends JFrame {
 
@@ -70,7 +69,8 @@ public class MainFrame extends JFrame {
         JPanel contentPanel = new JPanel(new WrapLayout());
 
         try {
-            rssList = new RSSParser().getParsedRSS("rss.xml");
+            //rssList = new RSSParser().getParsedRSS("rss.xml");
+            rssList = new RSSParser().getParsedRSS("https://www.zive.cz/rss");
             for (RSSItem item : rssList.getAllItems()) {
                 contentPanel.add(new CardView(item));
             }
@@ -84,38 +84,32 @@ public class MainFrame extends JFrame {
         add(myScrollPane = new JScrollPane(contentPanel), BorderLayout.CENTER);
         myScrollPane.getVerticalScrollBar().setUnitIncrement(10);
 
-        /*
-        //dolni text panel
-        JPanel textPanel = new JPanel(new BorderLayout());
-        textPanel.add(txtContent, BorderLayout.CENTER);
-        add(new JScrollPane(textPanel), BorderLayout.CENTER);
-        */
+        btnSave.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                List<RSSSource> sources = new ArrayList<>();
+                sources.add(new RSSSource("Živě.cz", "https://fjdslfsjkd"));
+                sources.add(new RSSSource("dafadfs", "https://fjdslfsjkd"));
+                sources.add(new RSSSource("4654646", "https://fjdslfsjkd"));
+                FileUtils.saveSources(sources);
+            }
+        });
 
-        /*
-        btnLoad.addActionListener(e -> {
-            if (validateInput()) {
+        btnLoad.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 try {
-                    txtContent.setText(FileUtils.loadStringFromFile(txtInputField.getText()));
+                    List<RSSSource> sources = FileUtils.loadSources();
+                    for (RSSSource s: sources
+                         ) {
+                        System.out.println(s.getName()+";"+s.getSource());
+                    }
                 } catch (IOException e1) {
-                    showErrorMessage(IO_LOAD_TYPE);
                     e1.printStackTrace();
                 }
             }
         });
-
-
-        btnSave.addActionListener(e -> {
-            if (validateInput()) {
-                try {
-                    FileUtils.saveStringToFile(txtInputField.getText(), txtContent.getText().getBytes(StandardCharsets.UTF_8));
-                } catch (IOException e1) {
-                    showErrorMessage(IO_SAVE_TYPE);
-                    e1.printStackTrace();
-                }
-            }
-        });*/
     }
-
 
     private boolean validateInput() {
         lblErrorMessage.setVisible(false);
