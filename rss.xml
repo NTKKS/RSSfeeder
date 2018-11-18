@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Živě.cz</title>
+        <link>https://www.zive.cz</link>
+        <description>
+        </description>
+        <language>cs</language>
+        <pubDate>Sun, 4 Nov 2018 18:00:00 GMT</pubDate>
+        <image>
+            <title>Živě.cz</title>
+            <url>https://www.zive.cz/Client.Images/Logos/logo-zive-rss.gif</url>
+            <link>https://www.zive.cz</link>
+        </image>
+        <atom:link rel="self" type="application/rss+xml" href="https://www.zive.cz/rss/sc-47"/>
+        <item>
+            <title>Moral machine: Už víme, zdali je lepší zabít psy, sebe nebo matky na přechodu</title>
+            <link>
+                https://www.zive.cz/clanky/moral-machine-uz-vime-zdali-je-lepsi-zabit-psy-sebe-nebo-matky-na-prechodu/sc-3-a-195728/default.aspx
+            </link>
+            <guid isPermaLink="false">195728-zive.cz</guid>
+            <description>Jak byste se sami vypořádali s tramavajovým dilematem? • Vědci před lety spustili globální
+                dotazník • Nyní se pochlubili s výsledky
+            </description>
+            <pubDate>Sun, 4 Nov 2018 18:00:00 GMT</pubDate>
+            <dc:creator>Jakub Čížek</dc:creator>
+        </item>
+        <item>
+            <title>Co ukázalo srovnání 9 levných Androidů. Za rok vyspěly, na mobilu už se nemusíte bát šetřit</title>
+            <link>
+                https://www.zive.cz/clanky/co-ukazalo-srovnani-9-levnych-androidu-za-rok-vyspely-na-mobilu-uz-se-nemusite-bat-setrit/sc-3-a-195764/default.aspx
+            </link>
+            <guid isPermaLink="false">195764-zive.cz</guid>
+            <description>Loni časopis Computer otestoval levné Androidy s cenovým stropem a dojmy byly nevalné, hardware
+                byl slabý, foťáky chrlily mazaniny. Teď se test opakuje. Strop je dokonce o pětistovku níže, ale dojmy
+                jsou o level výše.
+
+
+                Dnešní povídání bude jen obecné, pokud chcete znát pořadí ...
+            </description>
+            <pubDate>Sun, 4 Nov 2018 15:00:00 GMT</pubDate>
+            <dc:creator>Filip Kůžel, Jakub Michlovský</dc:creator>
+        </item>
+        <item>
+            <title>Umělci budou moci skrze Spotify nahrávat svou hudbu i na konkurenční hudební služby</title>
+            <link>
+                https://connect.zive.cz/clanky/umelci-budou-moci-skrze-spotify-nahravat-svou-hudbu-i-na-konkurencni-hudebni-sluzby/sc-320-a-195539/default.aspx
+            </link>
+            <guid isPermaLink="false">195539-zive.cz</guid>
+            <description>Novou investici, která výrazně usnadní život spoustě umělců, se rozhodlo podniknout Spotify.
+                Streamovací služba vložila částku, jejíž velikost odmítla sdělit, do distribuční služby DistroKid, která
+                slouží k nahrávání hudby na různé platformy. Díky tomu budou moci umělci nově nahrávat svoji hudbu ...
+            </description>
+            <pubDate>Sun, 4 Nov 2018 13:00:00 GMT</pubDate>
+            <dc:creator>Markéta Mikešová</dc:creator>
+        </item>
+        <item>
+            <title>Umělá inteligence se učí řeč jako dítě, které pozoruje okolí</title>
+            <link>
+                https://vtm.zive.cz/clanky/umela-inteligence-se-uci-rec-jako-dite-ktere-pozoruje-okoli/sc-870-a-195774/default.aspx
+            </link>
+            <guid isPermaLink="false">195774-zive.cz</guid>
+            <description>Vědci vytvořili nový systém učení řeči pro umělou inteligenci • Systém je podobný tomu
+                lidskému, stejně jako se učí děti • Nová technika odhaluje i fungování lidského mozku
+            </description>
+            <pubDate>Sun, 4 Nov 2018 11:35:00 GMT</pubDate>
+            <dc:creator>Karel Javůrek</dc:creator>
+        </item>
+        <item>
+            <title>Samořídicí auta vjedou už i do hlavního města USA. Ford tam získal povolení k testování</title>
+            <link>
+                https://www.zive.cz/clanky/samoridici-auta-vjedou-uz-i-do-hlavniho-mesta-usa-ford-tam-ziskal-povoleni-k-testovani/sc-3-a-195601/default.aspx
+            </link>
+            <guid isPermaLink="false">195601-zive.cz</guid>
+            <description>Zatímco Uber, Google a General Motors testují své autonomní vozy ve městech Phoenix a Los
+                Angeles, Ford se hodlá jako vůbec první vydat přímo do hlavního města Spojených států – Washingtonu,
+                D.C.
+
+
+                Automobilka Ford oznámila, že ve spolupráci se společností Argo a vedením města začne s testováním ...
+            </description>
+            <pubDate>Sun, 4 Nov 2018 11:00:00 GMT</pubDate>
+            <dc:creator>Karel Kilián</dc:creator>
+        </item>
+        <item>
+            <title>Lenovo okopírovalo od Sony vzhled VR headsetu. Teď za to bude platit</title>
+            <link>
+                https://www.zive.cz/clanky/lenovo-okopirovalo-od-sony-vzhled-vr-headsetu-ted-za-to-bude-platit/sc-3-a-195706/default.aspx
+            </link>
+            <guid isPermaLink="false">195706-zive.cz</guid>
+            <description>Ne vždy patentové spory končí velkými soudy, ve kterých se firmy do nekonečna žalují a
+                odvolávají. Někdy se společnosti dohodnou. Stalo tak v případě Lenova a Sony. Formy oznámily, že došly k
+                patentové dohodě, v rámci které bude Lenovo platit Sony za užívání jeho designu. Lenovo totiž u svého
+                ...
+            </description>
+            <pubDate>Sun, 4 Nov 2018 09:00:00 GMT</pubDate>
+            <dc:creator>Markéta Mikešová</dc:creator>
+        </item>
+        <item>
+            <title>Podívejte se, jak vidí svět umělá inteligence v elektromobilech Tesla</title>
+            <link>
+                https://vtm.zive.cz/clanky/podivejte-se-jak-vidi-svet-umela-inteligence-v-elektromobilech-tesla/sc-870-a-195693/default.aspx
+            </link>
+            <guid isPermaLink="false">195693-zive.cz</guid>
+            <description>Tesla vydala pro své elektromobily novou verzi systému s označením 9, který kromě řady novinek
+                a funkcí obsahuje i vylepšený Autopilot. Protože Tesla oproti jiným spoléhá na kombinaci klasických
+                kamer kolem celého vozu a radaru místo LIDARu jako třeba Waymo, umělá inteligence musí obraz ...
+            </description>
+            <pubDate>Sun, 4 Nov 2018 07:00:00 GMT</pubDate>
+            <dc:creator>Karel Javůrek</dc:creator>
+        </item>
+        <item>
+            <title>Týden Živě: Novinky Applu, eObčanka a zrádná kalkulačka ve Windows</title>
+            <link>
+                https://www.zive.cz/clanky/tyden-zive-novinky-applu-eobcanka-a-zradna-kalkulacka-ve-windows/sc-3-a-195760/default.aspx
+            </link>
+            <guid isPermaLink="false">195760-zive.cz</guid>
+            <description>Apple ukázal nový iPad PRo • A také nový Macbook Air a Mac mini • Stát má novou appku k
+                eObčance pro mobil
+            </description>
+            <pubDate>Sat, 3 Nov 2018 23:00:00 GMT</pubDate>
+            <dc:creator>Jakub Čížek</dc:creator>
+        </item>
+        <item>
+            <title>Notebook z Číny: MagicBook od Honoru nám ukázal, jaká úskalí to může přinést</title>
+            <link>https://www.zive.cz/clanky/notebook-z-ciny/sc-3-a-195761/default.aspx</link>
+            <guid isPermaLink="false">195761-zive.cz</guid>
+            <description>Na jaře Honor představil svůj první notebook a hned nám také vzkázal: „S modelem MagicBook pro
+                český trh nepočítáme.“ Dnes tuhle hliníkovou krásu držíme v rukou, ale na stanovisku firmy se nic
+                nemění, počítače k nám zatím vozit nehodlá. Můžete si jej nechat poslat z Číny, ale ve videu se dozvíte,
+                ...
+            </description>
+            <pubDate>Sat, 3 Nov 2018 15:00:00 GMT</pubDate>
+            <dc:creator>Tomáš Holčík, Filip Kůžel</dc:creator>
+        </item>
+        <item>
+            <title>Apple bude konkurovat Netflixu. Začne příští rok, majitelé iPhonů, iPadů a Apple TV budou mít službu
+                zdarma
+            </title>
+            <link>
+                https://www.zive.cz/clanky/apple-bude-konkurovat-netflixu-zacne-pristi-rok-majitele-iphonu-ipadu-a-apple-tv-budou-mit-sluzbu-zdarma/sc-3-a-195613/default.aspx
+            </link>
+            <guid isPermaLink="false">195613-zive.cz</guid>
+            <description>Dlouho očekávaná streamovací služba Applu, která se bude podobat Amazon Prime Video a Netflixu,
+                zahájí svůj provoz v první polovině příští roku. Serveru The Information to prozradili tři zaměstnanci
+                firmy.
+
+
+                Zda bude služba fungovat jako samostatná aplikace, nebo se objeví v rámci stávající ...
+            </description>
+            <pubDate>Sat, 3 Nov 2018 18:30:00 GMT</pubDate>
+            <dc:creator>Markéta Mikešová</dc:creator>
+        </item>
+        <item>
+            <title>Detektory kouře s hlasem matky probudí děti lépe než siréna</title>
+            <link>
+                https://vtm.zive.cz/clanky/detektory-koure-s-hlasem-matky-probudi-deti-lepe-nez-sirena/sc-870-a-195751/default.aspx
+            </link>
+            <guid isPermaLink="false">195751-zive.cz</guid>
+            <description>Spící děti probudí lépe než zvuk detektoru kouře hlas jejich matky • Rozdíl je přitom velmi
+                markantní: 52 % proti 91 % • Aplikace výsledků do výroby čidel může zachránit dětské životy
+            </description>
+            <pubDate>Sat, 3 Nov 2018 16:30:00 GMT</pubDate>
+            <dc:creator>Karel Kilián</dc:creator>
+        </item>
+        <item>
+            <title>Tesly dostanou funkci „přivolání“ – poslušně přijedou za svým majitelem</title>
+            <link>
+                https://www.zive.cz/clanky/tesly-dostanou-funkci-privolani--poslusne-prijedou-za-svym-majitelem/sc-3-a-195749/default.aspx
+            </link>
+            <guid isPermaLink="false">195749-zive.cz</guid>
+            <description>Generální ředitel Tesly Elon Musk publikoval ve čtvrtek na svém Twitteru informace o
+                připravovaných funkcích elektromobilů této značky. Jednou novinek má být možnost přivolat si auto na
+                místo, kde se právě nacházíte.
+
+
+                Tím ale chystané inovace zdaleka nekončí. Po vydání nového firmwaru budou vozy ...
+            </description>
+            <pubDate>Sat, 3 Nov 2018 13:00:00 GMT</pubDate>
+            <dc:creator>Karel Kilián</dc:creator>
+        </item>
+        <item>
+            <title>Český projekt Chronotechna uspěl na Kickstarteru. Vyrobí nejčernější hodinky na světě</title>
+            <link>
+                https://vtm.zive.cz/clanky/cesky-projekt-chronotechna-uspel-na-kickstarteru-vyrobi-nejcernejsi-hodinky-na-svete/sc-870-a-195762/default.aspx
+            </link>
+            <guid isPermaLink="false">195762-zive.cz</guid>
+            <description>Na crowdfundingové platformě Kickstarter slaví úspěch oživená česká značka Chronotechna. Na
+                výrobu „supertemných hodinek“ se jí podařilo během prvních deseti minut vybrat celou potřebnou
+                „startovací“ sumu na rozjetí výroby: půl milionu korun. Aktuálně již je vybráno od 307 podporovatelů
+                přes 176 ...
+            </description>
+            <pubDate>Sat, 3 Nov 2018 11:30:00 GMT</pubDate>
+            <dc:creator>Marek Schwarzman</dc:creator>
+        </item>
+        <item>
+            <title>Majitelé nových karet RTX 2080 Ti si stěžují na velkou poruchovost</title>
+            <link>
+                https://www.zive.cz/clanky/majitele-novych-karet-rtx-2080-ti-si-stezuji-na-velkou-poruchovost/sc-3-a-195704/default.aspx
+            </link>
+            <guid isPermaLink="false">195704-zive.cz</guid>
+            <description>Poslední týdny zaplavují oficiální fórum Nvidie stížnosti na vysokou míru reklamací, respektive
+                vadných kusů grafických karet GeForce RTX 2080 Ti v referenčním provedení Founders Edition od Nvidie.
+                Problém je takový, že karty po několika týdnech „umírají“ a někteří zákazníci už dokonce popisují, že
+                ...
+            </description>
+            <pubDate>Sat, 3 Nov 2018 10:07:00 GMT</pubDate>
+            <dc:creator>Jan Belka</dc:creator>
+        </item>
+        <item>
+            <title>Užitečné funkce ve Windows 10, o kterých možná ani nevíte</title>
+            <link>
+                https://www.zive.cz/clanky/uzitecne-funkce-ve-windows-10-o-kterych-mozna-ani-nevite/sc-3-a-195758/default.aspx
+            </link>
+            <guid isPermaLink="false">195758-zive.cz</guid>
+            <description>Operační systém Windows 10 nabízí spoustu užitečných drobností • O některých funkcích mnoho
+                uživatelů není • Ukážeme vám některé užitečné vychytávky
+            </description>
+            <pubDate>Fri, 2 Nov 2018 23:00:00 GMT</pubDate>
+            <dc:creator>Vladislav Kluska</dc:creator>
+        </item>
+        <item>
+            <title>Zapomeňte na bitcoin a zahoďte své kreditky, protože světem se už šíří Q</title>
+            <link>
+                https://www.zive.cz/clanky/zapomente-na-bitcoin-a-zahodte-sve-kreditky-protoze-svetem-se-uz-siri-q/sc-3-a-195770/default.aspx
+            </link>
+            <guid isPermaLink="false">195770-zive.cz</guid>
+            <description>Zapomeňte na bitcoin, zahoďte svoje kreditní karty, skartujte peněženky a bankovky rozdejte
+                chudým, protože na vše (nejen to ostatní) je tu Q!
+
+                Tedy alespoň lidé okolo PayPalu by to chtěli, a tak založili stejnojmennou elektronickou měnu – platební
+                systém, který slibuje, že vše sjednotí, zrychlí, ...
+            </description>
+            <pubDate>Fri, 2 Nov 2018 19:16:00 GMT</pubDate>
+            <dc:creator>Jakub Čížek</dc:creator>
+        </item>
+        <item>
+            <title>Uber začal nabízet předplatné pro časté zákazníky. Slibuje jim nižší ceny jízd</title>
+            <link>
+                https://www.zive.cz/clanky/uber-zacal-nabizet-predplatne-pro-caste-zakazniky-slibuje-jim-nizsi-ceny-jizd/sc-3-a-195707/default.aspx
+            </link>
+            <guid isPermaLink="false">195707-zive.cz</guid>
+            <description>Není den, kdy by se neobjevila zpráva o nějaké předplatitelské službě. V dnešní době nějakou
+                mají nebo plánují téměř všechny velké technologické firmy. Nově i Uber - oznámil, že ve vybraných
+                amerických městech začal nabízet službu nazvanou Ride Pass. Společnost to uvedla na svém blogu.
+
+
+                Služba je ...
+            </description>
+            <pubDate>Fri, 2 Nov 2018 20:33:00 GMT</pubDate>
+            <dc:creator>Markéta Mikešová</dc:creator>
+        </item>
+        <item>
+            <title>Španělsko vyhlásilo válku homeopatii: Ukončilo prodej zhruba 12 000 „léků“</title>
+            <link>
+                https://vtm.zive.cz/clanky/spanelsko-vyhlasilo-valku-homeopatii-ukoncilo-prodej-zhruba-12-000-leku/sc-870-a-195750/default.aspx
+            </link>
+            <guid isPermaLink="false">195750-zive.cz</guid>
+            <description>Španělské ministerstvo zdravotnictví zveřejnilo seznam 2008 homeopatických přípravků, jejichž
+                výrobci budou muset zažádat o oficiální vládní licenci – tedy za předpokladu, že chtějí i nadále
+                pokračovat v jejich prodeji.
+
+
+                K získání licence ovšem bude zapotřebí doložit (nejpozději do dubna příštího ...
+            </description>
+            <pubDate>Fri, 2 Nov 2018 15:00:00 GMT</pubDate>
+            <dc:creator>Jiří Černý</dc:creator>
+        </item>
+        <item>
+            <title>Emise CO₂ produkované energetickým průmyslem v USA klesly pod úroveň roku 1987</title>
+            <link>
+                https://vtm.zive.cz/clanky/emise-co-produkovane-energetickym-prumyslem-v-usa-klesly-pod-uroven-roku-1987/sc-870-a-195708/default.aspx
+            </link>
+            <guid isPermaLink="false">195708-zive.cz</guid>
+            <description>Emise CO2 energetického průmyslu USA klesly na úroveň roku 1987 • Zásadní podíl na tom má
+                klesající poptávka, sovisející s recesí • Svou roli ale sehrály i ekologičtější způsoby výroby elektřiny
+            </description>
+            <pubDate>Fri, 2 Nov 2018 19:00:00 GMT</pubDate>
+            <dc:creator>Karel Kilián</dc:creator>
+        </item>
+        <item>
+            <title>Soukromé konverzace z Facebooku jsou na prodej, hackeři chtějí zpeněžit své úlovky</title>
+            <link>
+                https://www.zive.cz/clanky/soukrome-konverzace-z-facebooku-jsou-na-prodej-hackeri-chteji-zpenezit-sve-ulovky/sc-3-a-195759/default.aspx
+            </link>
+            <guid isPermaLink="false">195759-zive.cz</guid>
+            <description>Další způsob, jak hackeři nakládají s kradenými daty, odhalila tento týden televize BBC. Ruští
+                útočníci podle ní vystavili na internet reklamu, že mají k prodeji tisíce soukromých zpráv z účtů
+                Facebooku, které získali skrze infikovaný doplněk do prohlížeče.
+
+
+                Reklamní nabídka se objevila na jednom ...
+            </description>
+            <pubDate>Fri, 2 Nov 2018 16:18:00 GMT</pubDate>
+            <dc:creator>Markéta Mikešová</dc:creator>
+        </item>
+        <item>
+            <title>Před 30 lety zaútočil první internetový červ Morris. Síť zkolabovala</title>
+            <link>https://www.zive.cz/clanky/prvni-internetovy-cerv-morris/sc-3-a-195756/default.aspx</link>
+            <guid isPermaLink="false">195756-zive.cz</guid>
+            <description>2. listopad 1988 se do dějin internetu zapsal černou kaňkou • Objevil se totiž první
+                internetový červ Morris • Chyba v jeho kódu vyústila v rozpad tehdejší internetové sítě
+            </description>
+            <pubDate>Fri, 2 Nov 2018 14:15:00 GMT</pubDate>
+            <dc:creator>Karel Kilián</dc:creator>
+        </item>
+        <item>
+            <title>Softwarový výrobce bojuje proti pirátství odposlechem a drakonickými tresty</title>
+            <link>
+                https://www.zive.cz/clanky/softwarovy-vyrobce-bojuje-proti-piratstvi-odposlechem-a-drakonickymi-tresty/sc-3-a-195755/default.aspx
+            </link>
+            <guid isPermaLink="false">195755-zive.cz</guid>
+            <description>Programy jako Photoshop aj. patří už roky k těm nejrozšířenějším na osobních počítačích, i když
+                v nemalém procentu případů se jedná o instalace bez patřičné licence – tedy o zjevné pirátství a krádež.
+                Kdyby tomu tak nebylo, Adobe musí být s trochou nadsázky bohatší než Apple.
+
+
+                Britskému studiu ...
+            </description>
+            <pubDate>Fri, 2 Nov 2018 13:50:00 GMT</pubDate>
+            <dc:creator>Jakub Čížek</dc:creator>
+        </item>
+        <item>
+            <title>Tajuplná čínská raketa by mohla ohrozit vzdušnou sílu amerického letectva</title>
+            <link>
+                https://vtm.zive.cz/clanky/tajuplna-cinska-raketa-by-mohla-ohrozit-vzdusnou-silu-americkeho-letectva/sc-870-a-195747/default.aspx
+            </link>
+            <guid isPermaLink="false">195747-zive.cz</guid>
+            <description>Čínské letectvo vyvíjí záhadnou raketu typu vzduch-vzduch • Mysteriózní zbraň nese označení
+                PL-XX • Jde o raketu vzduch-vzduch s velmi dalekým doletem
+            </description>
+            <pubDate>Fri, 2 Nov 2018 11:00:00 GMT</pubDate>
+            <dc:creator>Stanislav Mihulka</dc:creator>
+        </item>
+        <item>
+            <title>Apple čekají změny. iPhony už tolik netáhnou, ale ekosystém služeb masivně roste</title>
+            <link>
+                https://connect.zive.cz/clanky/apple-cekaji-zmeny-iphony-uz-tolik-netahnou-ale-ekosystem-sluzeb-masivne-roste/sc-320-a-195748/default.aspx
+            </link>
+            <guid isPermaLink="false">195748-zive.cz</guid>
+            <description>Apple zveřejnil finanční výsledky za čtvrté čtvrtletí fiskálního roku 2018 • Příjem i zisk
+                překonal očekávání, ale prodeje iPhonů stagnují • Apple ale roste ve službách a zvyšuje průměrnou
+                prodejní cenu iPhonu
+            </description>
+            <pubDate>Fri, 2 Nov 2018 10:39:00 GMT</pubDate>
+            <dc:creator>Karel Javůrek</dc:creator>
+        </item>
+        <item>
+            <title>Tesla v režimu autopilota nabourala do stojícího auta, majitel podává žalobu</title>
+            <link>
+                https://www.zive.cz/clanky/tesla-v-rezimu-autopilota-nabourala-do-stojiciho-auta-majitel-podava-zalobu/sc-3-a-195709/default.aspx
+            </link>
+            <guid isPermaLink="false">195709-zive.cz</guid>
+            <description>Tesla Model S nabourala na dálnici do stojícího auta • V tu chvíli jela v režimu autopilota,
+                zatímco řidič odpočíval • Hudson nyní žaluje Teslu, že slibuje něco, co neplní
+            </description>
+            <pubDate>Fri, 2 Nov 2018 07:33:00 GMT</pubDate>
+            <dc:creator>Karel Kilián</dc:creator>
+        </item>
+        <item>
+            <title>Kvantový internet se blíží. Oproti tomu klasickému bude mnohem bezpečnější</title>
+            <link>
+                https://connect.zive.cz/clanky/kvantovy-internet-se-blizi-oproti-tomu-klasickemu-bude-mnohem-bezpecnejsi/sc-320-a-195731/default.aspx
+            </link>
+            <guid isPermaLink="false">195731-zive.cz</guid>
+            <description>Jednotlivé bloky kvantového internetu už se pomalu vyvíjí a testují • Kvantová síť už bude mít
+                své uplatnění dříve, než bude všude dostupný kvantový internet • Nejdříve půjde o doplněk ke klasickému
+                internetu
+            </description>
+            <pubDate>Fri, 2 Nov 2018 10:22:00 GMT</pubDate>
+            <dc:creator>Karel Javůrek</dc:creator>
+        </item>
+        <item>
+            <title>Alphabet má možná problém. Růst příjmu zpomaluje, ale záchranou může být Waymo</title>
+            <link>
+                https://connect.zive.cz/clanky/alphabet-ma-mozna-problem-rust-prijmu-zpomaluje-ale-zachranou-muze-byt-waymo/sc-320-a-195687/default.aspx
+            </link>
+            <guid isPermaLink="false">195687-zive.cz</guid>
+            <description>Alphabet, pod kterých spadá Google ale i další divize (včetně Waymo pro autonomní vozy),
+                zveřejnil aktuální finanční výsledky za poslední tři měsíce a investoři nejsou zrovna nadšení.
+
+
+                Alphabet skončil s příjmem 33,7 miliardy dolarů, což je sice velmi dobré meziroční zvýšení o 21 %,
+                problém je ...
+            </description>
+            <pubDate>Fri, 2 Nov 2018 10:14:00 GMT</pubDate>
+            <dc:creator>Karel Javůrek</dc:creator>
+        </item>
+        <item>
+            <title>Flickr připravuje velké změny. Zaměří se na placené účty </title>
+            <link>
+                https://www.zive.cz/clanky/flickr-pripravuje-velke-zmeny-zameri-se-na-placene-ucty/sc-3-a-195746/default.aspx
+            </link>
+            <guid isPermaLink="false">195746-zive.cz</guid>
+            <description>Svůj charakter se postupně snaží změnit úložiště pro fotografie Flickr, které letos koupila
+                společnost SmugMug. Služba oznámila, že se chystá vyřešit několik problémů, s kterými se potýká, včetně
+                spamu, přihlašování přes Yahoo, zákaznickou podporu a především mění strukturu svých účtů.
+
+
+                Nově tak ...
+            </description>
+            <pubDate>Fri, 2 Nov 2018 08:06:00 GMT</pubDate>
+            <dc:creator>Markéta Mikešová</dc:creator>
+        </item>
+        <item>
+            <title>Na WhatsApp míří první reklamy. Bylo to nevyhnutelné</title>
+            <link>
+                https://www.zive.cz/clanky/na-whatsapp-miri-prvni-reklamy-bylo-to-nevyhnutelne/sc-3-a-195745/default.aspx
+            </link>
+            <guid isPermaLink="false">195745-zive.cz</guid>
+            <description>Po dlouhých letech fám a odchodu dvou spoluzakladatelů z firmy se děje to, o čem všichni
+                věděli, že se nejspíš stane, ale doufali, že k tomu nakonec nedojde. Na WhatsApp přicházejí první
+                reklamy, potvrdil viceprezident společnosti Chris Daniels. Začnou se objevovat ve funkci Status a mají
+                být ...
+            </description>
+            <pubDate>Fri, 2 Nov 2018 07:09:00 GMT</pubDate>
+            <dc:creator>Markéta Mikešová</dc:creator>
+        </item>
+        <item>
+            <title>V Istanbulu otevřeli první část obřího letiště. Zanedlouho bude největší na světě</title>
+            <link>
+                https://vtm.zive.cz/clanky/v-istanbulu-otevreli-prvni-cast-obriho-letiste-zanedlouho-bude-nejvetsi-na-svete/sc-870-a-195722/default.aspx
+            </link>
+            <guid isPermaLink="false">195722-zive.cz</guid>
+            <description>V pondělí turecký prezident Erdogan otevřel v Istanbulu první část nového letiště. To nahrazuje
+                dosavadní Atatürkovo letiště, které bude uzavřeno v prosinci. Právě dokončovaná stavba aktuálně obslouží
+                přibližně 90 milionů cestujících za rok, po dokončení by to mělo být až 200 milionů. Stane se tak ...
+            </description>
+            <pubDate>Fri, 2 Nov 2018 07:00:00 GMT</pubDate>
+            <dc:creator>Vladislav Kluska</dc:creator>
+        </item>
+        <item>
+            <title>Dobré vědět: Jaké jsou nejrychlejší stroje, které kdy člověk vyrobil</title>
+            <link>
+                https://vtm.zive.cz/clanky/dobre-vedet-jake-jsou-nejrychlejsi-stroje-ktere-kdy-clovek-vyrobil/sc-870-a-195743/default.aspx
+            </link>
+            <guid isPermaLink="false">195743-zive.cz</guid>
+            <description>Nejrychlejší stroj vyrobený člověkem musel zpomalit, aby rekordu dosáhl • Na špičce jsou
+                pochopitelně vesmírné sondy • Nejrychlejší parní stroj stanovil rekord kupodivu docela nedávno
+            </description>
+            <pubDate>Thu, 1 Nov 2018 18:00:00 GMT</pubDate>
+            <dc:creator>Jiří Dobrý</dc:creator>
+        </item>
+        <item>
+            <title>Google se chlubí novým testem reCAPTCHA v3. Měl by být ještě chytřejší a webmasteři dostanou lepší
+                kontrolu
+            </title>
+            <link>
+                https://www.zive.cz/clanky/google-se-chlubi-novym-testem-recaptcha-v3-mel-by-byt-jeste-chytrejsi-a-webmasteri-dostanou-lepsi-kontrolu/sc-3-a-195744/default.aspx
+            </link>
+            <guid isPermaLink="false">195744-zive.cz</guid>
+            <description>Google se pochlubil novou verzí své služby reCAPTCHA v3. Třetí generace populárního testu pro
+                webové stránky, který se pokouší odhalit, zdali jste člověk, nebo robot, což se hodí v diskuzích a
+                formulářích, slibuje úplně nový koncept.
+
+
+                Už v předchozí verzi Google změnil chování tak, abyste ...
+            </description>
+            <pubDate>Thu, 1 Nov 2018 16:55:00 GMT</pubDate>
+            <dc:creator>Jakub Čížek</dc:creator>
+        </item>
+        <item>
+            <title>Evropská komise chce „eurodetektor lži.“ Bude jej testovat v Maďarsku i Řecku</title>
+            <link>
+                https://www.zive.cz/clanky/evropska-komise-chce-eurodetektor-lzi-bude-jej-testovat-v-madarsku-i-recku/sc-3-a-195739/default.aspx
+            </link>
+            <guid isPermaLink="false">195739-zive.cz</guid>
+            <description>Hranice Evropské unie každý rok překročí 700 milionů osob a toto číslo se rok od roku zvyšuje.
+                Unie proto podobně jako ostatní hledá nové technologie, které by mohly uspíšit odbavení cestujících.
+                Jednou z nich je projekt s nepříliš atraktivním názvem iBorderCtrl.
+
+                Vítej cestovateli, jsem automat a ...
+            </description>
+            <pubDate>Thu, 1 Nov 2018 16:15:00 GMT</pubDate>
+            <dc:creator>Jakub Čížek</dc:creator>
+        </item>
+        <item>
+            <title>Google a iRobot spojují síly, chtějí zmapovat chytré domácnosti robotickými vysavači</title>
+            <link>
+                https://www.zive.cz/clanky/google-a-irobot-spojuji-sily-chteji-zmapovat-chytre-domacnosti-robotickymi-vysavaci/sc-3-a-195736/default.aspx
+            </link>
+            <guid isPermaLink="false">195736-zive.cz</guid>
+            <description>Společnosti Google a iRobot oznámily uzavření partnerství, jehož cílem je najít další způsoby,
+                jak propojit produkty chytré domácnosti s Asistentem Google. V rámci spolupráce chce vyhledávací gigant
+                využít i mapy domácností, sestavené robotickými vysavači Roomba.
+
+
+                Nejvyšší modely robotických ...
+            </description>
+            <pubDate>Thu, 1 Nov 2018 12:35:00 GMT</pubDate>
+            <dc:creator>Karel Kilián</dc:creator>
+        </item>
+        <item>
+            <title>NASA chce vyrábět raketové palivo z marsovské půdy. Pomáhat s tím budou roboti</title>
+            <link>
+                https://vtm.zive.cz/clanky/nasa-chce-vyrabet-raketove-palivo-z-marsovske-pudy-pomahat-s-tim-budou-roboti/sc-870-a-195735/default.aspx
+            </link>
+            <guid isPermaLink="false">195735-zive.cz</guid>
+            <description>Nedávno jsme psali o tom, že budoucí kolonisté Marsu by si na sofistikovaných 3D tiskárnách
+                mohli tisknout klidně i celé rakety. Ale kde pro ně vzít pohonné hmoty?
+
+
+                Hledáním odpovědi na tuto otázku se zabývají odborníci z NASA pod vedením Kurta Leuchta. Ten je
+                přesvědčen o tom, že raketové palivo ...
+            </description>
+            <pubDate>Thu, 1 Nov 2018 15:00:00 GMT</pubDate>
+            <dc:creator>Jiří Černý</dc:creator>
+        </item>
+    </channel>
+</rss>
