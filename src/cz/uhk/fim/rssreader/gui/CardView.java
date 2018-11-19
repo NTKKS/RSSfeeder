@@ -22,10 +22,11 @@ public class CardView extends JPanel {
         setLayout(new WrapLayout());
         setSize(ITEM_WIDTH, HEIGHT);
         setBackground(genColor(item));
-        setForeground(inverseColor(genColor(item)));
+        textColor = inverseColor(genColor(item));
         setTitle(item.getTitle());
         setDescription(item.getDescription());
-        setInfo(String.format("%s%s", item.getPubDate(), item.getAuthor()));
+        setInfo(String.format("%s<br />%s", item.getPubDate(), item.getAuthor()));
+
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -58,14 +59,13 @@ public class CardView extends JPanel {
         JLabel lblInfo = new JLabel();
         lblInfo.setSize(COMPONENT_WIDTH, HEIGHT);
         lblInfo.setFont(new Font("Courier", Font.ITALIC, 10));
-        lblInfo.setText(String.format("%s%s<br />%s%s", startHtml, info.substring(0, 28), info.substring(28), endHtml));
-        add(lblInfo);
-
-        if (getForeground() == Color.WHITE) {
+        lblInfo.setText(String.format("%s%s%s", startHtml, info, endHtml));
+        if (textColor == Color.WHITE) {
             lblInfo.setForeground(Color.LIGHT_GRAY);
         } else {
             lblInfo.setForeground(Color.DARK_GRAY);
         }
+        add(lblInfo);
     }
 
     private Color genColor(RSSItem item) {
