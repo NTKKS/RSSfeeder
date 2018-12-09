@@ -6,6 +6,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class DetailFrame extends JFrame {
 
@@ -40,6 +43,22 @@ public class DetailFrame extends JFrame {
                 if(SwingUtilities.isRightMouseButton(e)){
                     dispose();
                 }
+                //otevri odkaz v prohlizeci
+                else if (SwingUtilities.isLeftMouseButton(e)&&e.isControlDown()){
+                        Desktop desktop = java.awt.Desktop.getDesktop();
+                    URI oURL = null;
+                    try {
+                        oURL = new URI(item.getLink());
+                    } catch (URISyntaxException e1) {
+                        e1.printStackTrace();
+                    }
+                    try {
+                        desktop.browse(oURL);
+                    } catch (IOException e1) {
+                        e1.printStackTrace();
+                    }
+                    dispose();
+                }
             }
         });
 
@@ -57,6 +76,7 @@ public class DetailFrame extends JFrame {
         content.add(lblTitle);
 
         JLabel lblDescription = new JLabel(item.getDescription());
+        System.out.println(lblDescription.getText());
         lblDescription.setText(String.format("%s%s%s", startHtmlDesc,lblDescription.getText(),endHtml));
         lblDescription.setFont(new Font("Arial",Font.PLAIN,12));
         lblDescription.setForeground(textColor);
