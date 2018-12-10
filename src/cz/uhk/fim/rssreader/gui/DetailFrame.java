@@ -85,7 +85,7 @@ public class DetailFrame extends JFrame {
         JLabel lblLink = new JLabel(item.getLink());
         lblLink.setText(String.format("%s%s%s", startHtml,lblLink.getText(),endHtml));
         lblLink.setFont(new Font("Arial",Font.ITALIC,10));
-        lblLink.setForeground(textColor);//getGray(textColor));
+        lblLink.setForeground(getGray(textColor));
         content.add(lblLink);
 
         JLabel lblDateAuthor = new JLabel(item.getPubDate()+" "+item.getAuthor());

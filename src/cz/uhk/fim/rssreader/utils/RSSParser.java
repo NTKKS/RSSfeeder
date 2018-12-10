@@ -27,7 +27,12 @@ public class RSSParser {
 
         if (source.matches("^https://.*$")) {
             parser.parse(new InputSource(new URL(source).openStream()), itemHandler);
-        } else {
+        }
+        else if (source.matches("^@.*$")){
+            source = ("https://twitrss.me/twitter_user_to_rss/?user="+source.substring(1));
+            parser.parse(new InputSource(new URL(source).openStream()), itemHandler);
+        }
+        else {
             parser.parse(new File(source), itemHandler);
         }
     }
